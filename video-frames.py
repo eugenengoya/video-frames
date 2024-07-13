@@ -2,14 +2,14 @@ import os
 import cv2
 
 # Path to the video file
-vid_path = ""
+vid_path = "..."
 
 # Extract video name without extension
 video_name = os.path.splitext(os.path.basename(vid_path))[0]
 print(f"Video name: {video_name}")
 
 # Create the output directory if it doesn't exist
-outdir = os.path.join("", video_name)
+outdir = os.path.join("...", video_name)
 if not os.path.exists(outdir):
     os.makedirs(outdir)
     print(f"Created directory: {outdir}")
